@@ -18,7 +18,11 @@ root.render(
       <Alert />
       <BrowserRouter>
         <Routes>
-          <Route index path="/" element={<Home />}></Route>
+          <Route
+            index
+            path="github-repositories-explorer"
+            element={<Home />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </AppContextProvider>

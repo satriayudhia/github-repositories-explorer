@@ -1,4 +1,5 @@
 {
+  "homepage": "https://satriayudhia.github.io/github-repositories-explorer",
   "name": "github-repositories-explorer",
   "version": "0.1.0",
   "private": true,
@@ -27,6 +28,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!msw)/\"",
     "eject": "react-scripts eject"
@@ -49,7 +52,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
   "jest": {
     "moduleNameMapper": {
       "^axios$": "axios/dist/node/axios.cjs"
